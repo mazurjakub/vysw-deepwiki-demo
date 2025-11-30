@@ -29,7 +29,7 @@ async def list_users():
     return get_users()
 
 @app.post("/users", response_model=User, status_code=201)
-async def add_use(user: UserCreate):
+async def add_user(user: UserCreate):
     """
     Vytvoří nového uživatele
     
